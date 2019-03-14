@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 const config = require("./config");
 const mongoose = require("mongoose");
 
+mongoose.Promise = global.Promise;
+
 mongoose.connect(config.url, {
     useNewUrlParser: true
 }).then(()=> {
@@ -26,8 +28,8 @@ app.get('/',(req, res)=> {
 });
 
 //listen at port 3000
-app.listen(3000, ()=>{
-    console.log(`Server is listening in port 3000`);
+app.listen(config.serverport, ()=>{
+    console.log(`Server is listening in port ${config.serverport}`);
 });
 
 
