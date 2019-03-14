@@ -7,6 +7,19 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+//connecting to database
+const config = require("./config");
+const mongoose = require("mongoose");
+
+mongoose.connect(config.url, {
+    useNewUrlParser: true
+}).then(()=> {
+    console.log("Connected to database successfully")
+}).catch(err => {
+    console.log("could not connect to database. Exiting now...", err);
+    process.exit();
+});
+
 //default route
 app.get('/',(req, res)=> {
     res.json({"message":"Welcome to Products API"})
