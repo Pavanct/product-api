@@ -17,3 +17,26 @@ const product = new Product({
     company: req.body.company
 });
 
+//Save products 
+product.save()
+.then(data => {
+    res.send(data);
+}).catch(err => {
+    res.status(500).send({
+        message: err.message || "Something wrong while creating the product"
+    })
+})
+
+//Retrieve all products from the database
+exports.findAll = (req, res) => {
+    Product.find()
+    .then(products => {
+        Product.find().then(products=>{
+            console.log(products);
+        }).catch(err=>{
+            res.status(500).send({
+                message: err.message || "Something wrong while retrieving the products"
+            });
+        });
+    });
+}
