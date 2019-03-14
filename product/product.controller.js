@@ -40,3 +40,25 @@ exports.findAll = (req, res) => {
         });
     });
 }
+
+//Find a single product with product id
+exports.findOne() = (req, res) => {
+    Product.findById(req.params.productId)
+    .then(product => {
+        if(!product){
+            return res.status(400).send({
+                message: "Product not found with id" + req.params.productId
+            });
+        }
+        res.send(product);
+    }).catch(err => {
+        if(err.kind == 'ObjectId'){
+            return res.status(404).send({
+                message: "Something wrong with retrieving product with id " + req.params.productId
+            });
+        }
+        return res.status(500).send({
+            message: "Something wrong retrieving product with id " + req.params.productId
+        });
+    });
+};
