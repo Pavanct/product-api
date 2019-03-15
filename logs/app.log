@@ -1,1 +1,6 @@
 {"message":"::1 - - [15/Mar/2019:01:37:57 +0000] \"GET /products/5c8afe42cc263b53706c265f HTTP/1.1\" 400 63 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:01:41:08 +0000] \"GET /products/ HTTP/1.1\" 200 31 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:01:41:19 +0000] \"POST /products/ HTTP/1.1\" 200 207 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:01:41:41 +0000] \"POST /products/ HTTP/1.1\" 200 209 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:01:42:09 +0000] \"POST /products/ HTTP/1.1\" 200 211 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:01:45:19 +0000] \"POST /products/ HTTP/1.1\" 200 209 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}

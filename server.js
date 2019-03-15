@@ -1,7 +1,9 @@
+var compression = require('compression')
 const express = require("express");
 
 const cors = require("cors");
 const app = express();
+app.use(compression());
 const morgan = require('morgan');
 var winston = require('./winston');
 app.use(morgan('combined', { stream: winston.stream }));
