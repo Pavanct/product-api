@@ -43,7 +43,7 @@ exports.findAll = (req, res) => {
 }
 
 //Find a single product with product id
-exports.findOne() = (req, res) => {
+exports.findOne = (req, res) => {
     Product.findById(req.params.productId)
     .then(product => {
         if(!product){
