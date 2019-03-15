@@ -31,7 +31,7 @@ exports.create = (req, res) => {
 //Retrieve all products from the database
 exports.findAll = (req, res) => {
     console.log("inside findAll");
-
+    console.log(req.body);
     Product.find()
         .then(products => {
             if (products.length < 1) {
@@ -50,6 +50,7 @@ exports.findAll = (req, res) => {
 
 //Find a single product with product id
 exports.findOne = (req, res) => {
+    console.log(req.params);
     Product.findById(req.params.productId)
         .then(product => {
             if (!product) {
@@ -72,6 +73,9 @@ exports.findOne = (req, res) => {
 
 //Update a product
 exports.update = (req, res) => {
+    console.log("inside update: params ", req.params);
+    console.log("inside update: body ", req.body);
+    
     //Validate request
     if (!req.body) {
         return res.status(400).send({
@@ -109,6 +113,8 @@ exports.update = (req, res) => {
 
 // Delete a product with the specified productId in the request
 exports.delete = (req, res) => {
+    console.log("inside delete req params", req.params);
+    
     Product.findByIdAndDelete(req.params.productId)
         .then(product => {
             if (!product) {
