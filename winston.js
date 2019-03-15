@@ -4,7 +4,7 @@ var winston = require('winston');
 // define the custom settings for each transport (file, console)
 var options = {
   file: {
-    level: 'verbose',
+    level: 'info',
     filename: `${appRoot}/logs/app.log`,
     handleExceptions: true,
     json: true,

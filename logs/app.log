@@ -4,3 +4,8 @@
 {"message":"::1 - - [15/Mar/2019:01:41:41 +0000] \"POST /products/ HTTP/1.1\" 200 209 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
 {"message":"::1 - - [15/Mar/2019:01:42:09 +0000] \"POST /products/ HTTP/1.1\" 200 211 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
 {"message":"::1 - - [15/Mar/2019:01:45:19 +0000] \"POST /products/ HTTP/1.1\" 200 209 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:02:07:30 +0000] \"GET /products HTTP/1.1\" 200 841 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:02:07:32 +0000] \"GET /sw.js HTTP/1.1\" 404 144 \"http://localhost:3000/sw.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:02:07:41 +0000] \"GET /products HTTP/1.1\" 200 841 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:02:07:42 +0000] \"GET /sw.js HTTP/1.1\" 404 144 \"http://localhost:3000/sw.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\"\n","level":"info"}
+{"message":"::1 - - [15/Mar/2019:02:08:18 +0000] \"GET /sw.js HTTP/1.1\" 404 144 \"http://localhost:3000/sw.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\"\n","level":"info"}
