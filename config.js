@@ -1,4 +1,4 @@
 module.exports = {
-    url: "mongodb+srv://127.0.0.1/test?retryWrites=true",
+    url: "mongodb://ec2-35-159-19-217.eu-central-1.compute.amazonaws.com/test?retryWrites=true",
     serverport: 3000 
 }
